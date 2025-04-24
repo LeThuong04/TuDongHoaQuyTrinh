@@ -81,7 +81,6 @@ def job():
 #7. Set lịch chạy vào lúc 6h sáng hằng ngày.
 
 schedule.every().day.at("06:00").do(job)
-schedule.every().day.at("12:00").do(job)
 # job()
 while True:
     schedule.run_pending() 
